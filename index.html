@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Are You, Really? | MBTI Personality Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background Aura -->
+    <div class="aura-background" id="auraBackground"></div>
+
+    <!-- Hero Section -->
+    <section id="heroSection" class="section hero-section active">
+        <div class="container">
+            <div class="hero-content">
+                <div class="particles" id="particles"></div>
+                <h1 class="hero-title fade-in">Who are you, really?</h1>
+                <p class="hero-subtitle fade-in-delay">Take a 5-minute journey to uncover your personality type.</p>
+                <button class="btn-primary" id="startBtn">Begin the Test</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question Section -->
+    <section id="questionSection" class="section question-section">
+        <div class="container">
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+                <span class="progress-text" id="progressText">Question 1 of 20</span>
+            </div>
+
+            <!-- Question Card -->
+            <div class="question-card" id="questionCard">
+                <h2 class="question-text" id="questionText"></h2>
+                <div class="options-container" id="optionsContainer">
+                    <!-- Options will be dynamically inserted -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultsSection" class="section results-section">
+        <div class="container">
+            <div class="results-content">
+                <!-- Personality Symbol Animation -->
+                <div class="personality-symbol" id="personalitySymbol">
+                    <div class="symbol-shape"></div>
+                </div>
+
+                <div class="results-card fade-in">
+                    <h1 class="personality-type" id="personalityType">INTP</h1>
+                    <h2 class="personality-title" id="personalityTitle">The Thinker</h2>
+                    <p class="personality-description" id="personalityDescription"></p>
+
+                    <div class="dimensions-grid" id="dimensionsGrid">
+                        <!-- Dimension bars will be inserted here -->
+                    </div>
+
+                    <div class="results-actions">
+                        <button class="btn-primary" id="shareBtn">Share Your Results</button>
+                        <button class="btn-secondary" id="retakeBtn">Retake the Test</button>
+                        <button class="btn-secondary" id="learnMoreBtn">Learn More About Your Type</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
